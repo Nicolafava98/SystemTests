@@ -10,27 +10,9 @@ describe("pruebas-shiftingContent", () => {
   beforeEach(() => {
     mainPage.visitarMainPage();
     mainPage.clicarShiftingContent();
-  });
-  it("The user click to menu element", () => {
     shiftingContent.clicarMenuElement();
   });
-  it("The user proves the element 1", () => {
-    menuElementPage.comprobarElement1();
-  });
-  it("The user proves the element 2", () => {
-    shiftingContent.clicarMenuElement();
-    menuElementPage.comprobarElement2();
-  });
-  it("The user proves the element 3", () => {
-    shiftingContent.clicarMenuElement();
-    menuElementPage.comprobarElement3();
-  });
-  it("The user proves the element 4", () => {
-    shiftingContent.clicarMenuElement();
-    menuElementPage.comprobarElement4();
-  });
-  it("The user proves the element5 ", () => {
-    shiftingContent.clicarMenuElement();
-    menuElementPage.comprobarElement5();
+  it("The user proves the elements", () => {
+    menuElementPage.comprobarElements(5);
   });
 });
